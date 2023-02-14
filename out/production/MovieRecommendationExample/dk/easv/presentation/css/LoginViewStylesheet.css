@@ -1,0 +1,21 @@
+#loginViewID{
+    -fx-background-color: #282A3A;;
+}
+#loginButton,#signInButton{
+    -fx-width: 400px;
+    -fx-height: 60px;
+    -fx-background-color: #C69749;
+    -fx-border-color:#020202;
+    -fx-border-width: 2px;
+    -fx-background-radius: 16px;
+    -fx-border-radius: 15px;
+    -fx-font-family: 'Inter';
+    -fx-font-style: normal;
+    -fx-font-weight: 900;
+    -fx-font-size: 20px;
+    -fx-line-height: 20px;
+    -fx-display: flex;
+    -fx-align-items: center;
+    -fx-text-align: center;
+    -fx-color: #020202;
+}

@@ -13,35 +13,35 @@
 
 <BorderPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.easv.presentation.controller.LogInController">
    <center>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="296.0" prefWidth="454.0">
+      <AnchorPane fx:id="loginViewID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="500.0" stylesheets="@../css/LoginViewStylesheet.css">
          <children>
-            <GridPane layoutX="104.0" layoutY="86.0" prefHeight="110.0" prefWidth="245.0">
+            <GridPane layoutX="139.0" layoutY="86.0" prefHeight="126.0" prefWidth="246.0">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                </columnConstraints>
                <rowConstraints>
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="79.19998779296876" minHeight="10.0" prefHeight="58.4" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.00000000000001" minHeight="10.0" prefHeight="60.00000000000001" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
                   <MFXPasswordField borderGap="5.0" floatingText="Password" prefHeight="23.0" prefWidth="246.0" text="anneke_pass123" GridPane.rowIndex="1" />
                   <MFXTextField fx:id="userId" floatingText="Username" prefHeight="50.0" prefWidth="243.0" text="Anneke Preusig" />
                </children>
             </GridPane>
-            <GridPane layoutX="160.0" layoutY="210.0" prefHeight="30.0" prefWidth="133.0">
+            <GridPane layoutX="137.0" layoutY="240.0" prefHeight="30.0" prefWidth="250.0">
                <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.6" minWidth="10.0" prefWidth="133.6" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="127.99998779296877" minWidth="10.0" prefWidth="116.79999999999998" />
                </columnConstraints>
                <rowConstraints>
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <MFXButton buttonType="RAISED" onAction="#logIn" rippleColor="#2f4671" text="Login" />
-                  <MFXButton buttonType="RAISED" onAction="#signUp" rippleColor="#2f4671" text="Sign Up" GridPane.columnIndex="1" />
+                  <MFXButton fx:id="loginButton" buttonType="RAISED" onAction="#logIn" prefHeight="43.0" prefWidth="120.0" rippleAnimateBackground="false" rippleAnimateShadow="true" rippleBackgroundOpacity="0.1" rippleColor="#b19712" rippleRadius="10.0" rippleRadiusMultiplier="0.0" text="Login" />
+                  <MFXButton fx:id="signInButton" buttonType="RAISED" onAction="#signUp" prefHeight="43.0" prefWidth="130.0" rippleColor="#b19712" text="Sign Up" GridPane.columnIndex="1" />
                </children>
             </GridPane>
-            <ImageView fx:id="avatarView" fitHeight="74.0" fitWidth="97.0" layoutX="178.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="avatarView" fitHeight="97.0" fitWidth="93.0" layoutX="225.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@/avatar-icon.png" />
                </image>
