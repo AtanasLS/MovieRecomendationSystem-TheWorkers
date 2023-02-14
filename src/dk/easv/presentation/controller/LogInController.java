@@ -48,10 +48,14 @@ public class LogInController implements Initializable {
             Parent root = loader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setFullScreen(true);
             stage.setTitle("Movie Recommendation System 0.01 Beta");
             stage.show();
+            /*
             AppController controller = loader.getController();
             controller.setModel(model);
+
+             */
             ((Node)((Button)actionEvent.getSource())).getScene().getWindow().hide();
 
         } catch (IOException e) {
