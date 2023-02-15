@@ -4,6 +4,8 @@ import dk.easv.entities.*;
 import dk.easv.presentation.model.AppModel;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 
 import java.net.URL;
@@ -20,6 +22,9 @@ public class AppController implements Initializable {
     private ListView<UserSimilarity> lvTopSimilarUsers;
     @FXML
     private ListView<TopMovie> lvTopFromSimilar;
+    @FXML
+    private Label footer;
+
 
 
     private AppModel model;
