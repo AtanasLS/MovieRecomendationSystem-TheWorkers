@@ -3,9 +3,11 @@
 <?import io.github.palexdev.materialfx.controls.MFXTextField?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Blend?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <ScrollPane fx:id="mainContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1586.0" prefWidth="1700.0" stylesheets="@../css/AppViewStylesheet.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
@@ -18,10 +20,156 @@
                </font></MFXTextField>
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="80.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../resources/avatar-icon.png" />
+                  <Image url="@/avatar-icon.png" />
                </image>
             </ImageView>
             <Label fx:id="firstTitle" layoutX="524" layoutY="206" stylesheets="@../css/AppViewStylesheet.css" text="Top 3 Movies" />
+            <ImageView fx:id="topOneMov" fitHeight="381.0" fitWidth="214.0" layoutX="199.0" layoutY="320.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                   <Image url="@/movie_covers/download (1).jpeg" />
+               </image>
+               <effect>
+                  <Blend />
+               </effect></ImageView>
+
+            <ImageView fx:id="topTwoMov" fitHeight="381.0" fitWidth="214.0" layoutX="570.0" layoutY="320.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                   <Image url="@/movie_covers/download (2).jpeg" />
+               </image>
+               <effect>
+                  <Blend />
+               </effect></ImageView>
+
+            <ImageView fx:id="topThreeMov" fitHeight="381.0" fitWidth="214.0" layoutX="936.0" layoutY="320.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/movie_covers/download.jpeg" />
+               </image>
+               <effect>
+                  <Blend />
+               </effect></ImageView>
+
+           <Label fx:id="topOneMovTitle" layoutX="199" layoutY="556.0" prefHeight="82.0" prefWidth="214.0" style="-fx-background-color: #02020280;" text="Label" />
+            <Label fx:id="topTwoMovTitle" layoutX="570.0" layoutY="556.0" prefHeight="82.0" prefWidth="214.0" style="-fx-background-color: #02020280;" text="Label" />
+            <Label fx:id="topThreeMovTitle" layoutX="936" layoutY="556" prefHeight="82.0" prefWidth="214.0" style="-fx-background-color: #02020280;" text="Label" />
+            <Line fx:id="firstSeparateLine" endX="1700.0" layoutY="750.0" stroke="#735f32" strokeWidth="5.0" />
+            <Label fx:id="firstSubLable" layoutX="100.0" layoutY="780.0" prefHeight="50.0" prefWidth="250.0" text="Top Rated" />
+
+
+
+
+             <ImageView fx:id="topRateFirstMovie" fitHeight="270.0" fitWidth="190.0" layoutX="100.0" layoutY="885.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                 <image>
+                     <Image url="@/movie_covers/download.jpeg" />
+                 </image>
+                 <effect>
+                     <Blend />
+                 </effect></ImageView>
+            <Label fx:id="topOneMovTitle1" layoutX="100.0" layoutY="1075.0" prefHeight="82.0" prefWidth="182.0" style="-fx-background-color: #02020280;" text="Label" />
+
+
+            <ImageView fx:id="topRateSecondMovie" fitHeight="270.0" fitWidth="190.0" layoutX="350.0" layoutY="885.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@/movie_covers/download.jpeg" />
+                </image>
+                <effect>
+                    <Blend />
+                </effect></ImageView>
+             <Label fx:id="topOneMovTitle2" layoutX="350.0" layoutY="1075.0" prefHeight="82.0" prefWidth="182.0" style="-fx-background-color: #02020280;" text="Label" />
+
+             <ImageView fx:id="topRateThirdMovie" fitHeight="270.0" fitWidth="190.0" layoutX="600.0" layoutY="885.0" pickOnBounds="true" preserveRatio="true">
+                 <image>
+                     <Image url="@/movie_covers/download.jpeg" />
+                 </image>
+                 <effect>
+                     <Blend />
+                 </effect></ImageView>
+             <Label fx:id="topOneMovTitle3" layoutX="600.0" layoutY="1075.0" prefHeight="82.0" prefWidth="182.0" style="-fx-background-color: #02020280;" text="Label" />
+
+             <ImageView fx:id="topRateFourthMovie" fitHeight="270.0" fitWidth="190.0" layoutX="850.0" layoutY="885.0" pickOnBounds="true" preserveRatio="true">
+                 <image>
+                     <Image url="@/movie_covers/download.jpeg" />
+                 </image>
+                 <effect>
+                     <Blend />
+                 </effect></ImageView>
+             <Label fx:id="topOneMovTitle4" layoutX="850.0" layoutY="1075.0" prefHeight="82.0" prefWidth="182.0" style="-fx-background-color: #02020280;" text="Label" />
+
+             <ImageView fx:id="topRateFifthMovie" fitHeight="270.0" fitWidth="190.0" layoutX="1100.0" layoutY="885.0" pickOnBounds="true" preserveRatio="true">
+                 <image>
+                     <Image url="@/movie_covers/download.jpeg" />
+                 </image>
+                 <effect>
+                     <Blend />
+                 </effect></ImageView>
+             <Label fx:id="topOneMovTitle5" layoutX="1100.0" layoutY="1075.0" prefHeight="82.0" prefWidth="182.0" style="-fx-background-color: #02020280;" text="Label" />
+
+             <Line fx:id="secondSeparateLine" endX="1700.0" layoutY="1250.0" stroke="#735f32" strokeWidth="5.0" />
+
+
+             <Label fx:id="cat1" layoutX="100.0" layoutY="1350.0" prefHeight="50.0" prefWidth="150.0" text="Action" />
+             <Label fx:id="cat2" layoutX="310.0" layoutY="1350.0" prefHeight="50.0" prefWidth="150.0" text="Drama" />
+             <Label fx:id="cat3" layoutX="520.0" layoutY="1350.0" prefHeight="50.0" prefWidth="150.0" text="Comedy" />
+             <Label fx:id="cat4" layoutX="730.0" layoutY="1350.0" prefHeight="50.0" prefWidth="150.0" text="Horror" />
+             <Label fx:id="cat5" layoutX="940.0" layoutY="1350.0" prefHeight="50.0" prefWidth="150.0" text="Animation" />
+             <Label fx:id="cat6" layoutX="1150.0" layoutY="1350.0" prefHeight="50.0" prefWidth="150.0" text="Romance" />
+
+
+
+             <ImageView fx:id="catMov1" fitHeight="270.0" fitWidth="190.0" layoutX="100.0" layoutY="1450.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                 <image>
+                     <Image url="@/movie_covers/download.jpeg" />
+                 </image>
+                 <effect>
+                     <Blend />
+                 </effect></ImageView>
+             <Label fx:id="catMovTitle1" layoutX="100.0" layoutY="1640.0" prefHeight="82.0" prefWidth="182.0" style="-fx-background-color: #02020280;" text="Label" />
+
+
+             <ImageView fx:id="catMov2" fitHeight="270.0" fitWidth="190.0" layoutX="350.0" layoutY="1450.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                 <image>
+                     <Image url="@/movie_covers/download.jpeg" />
+                 </image>
+                 <effect>
+                     <Blend />
+                 </effect></ImageView>
+             <Label fx:id="catMovTitle2" layoutX="350.0" layoutY="1640.0" prefHeight="82.0" prefWidth="182.0" style="-fx-background-color: #02020280;" text="Label" />
+
+             <ImageView fx:id="catMov3" fitHeight="270.0" fitWidth="190.0" layoutX="600.0" layoutY="1450.0" pickOnBounds="true" preserveRatio="true">
+                 <image>
+                     <Image url="@/movie_covers/download.jpeg" />
+                 </image>
+                 <effect>
+                     <Blend />
+                 </effect></ImageView>
+             <Label fx:id="catMovTitle3" layoutX="600.0" layoutY="1640.0" prefHeight="82.0" prefWidth="182.0" style="-fx-background-color: #02020280;" text="Label" />
+
+             <ImageView fx:id="catMov4" fitHeight="270.0" fitWidth="190.0" layoutX="850.0" layoutY="1450.0" pickOnBounds="true" preserveRatio="true">
+                 <image>
+                     <Image url="@/movie_covers/download.jpeg" />
+                 </image>
+                 <effect>
+                     <Blend />
+                 </effect></ImageView>
+             <Label fx:id="catMovTitle4" layoutX="850.0" layoutY="1640.0" prefHeight="82.0" prefWidth="182.0" style="-fx-background-color: #02020280;" text="Label" />
+
+             <ImageView fx:id="catMov5" fitHeight="270.0" fitWidth="190.0" layoutX="1100.0" layoutY="1450.0" pickOnBounds="true" preserveRatio="true">
+                 <image>
+                     <Image url="@/movie_covers/download.jpeg" />
+                 </image>
+                 <effect>
+                     <Blend />
+                 </effect></ImageView>
+             <Label fx:id="catMovTitle5" layoutX="1100.0" layoutY="1640.0" prefHeight="82.0" prefWidth="182.0" style="-fx-background-color: #02020280;" text="Label" />
+
+
+
+            <Label fx:id="footer" layoutX="0.0" layoutY="1800.0" prefHeight="100.0" prefWidth="1440.0" style="-fx-background-color: #735F32;" text="Private movie collection &#10;Made by Group Name&#10;         EASV 2023" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" />
+
+
+
+
+
+
          </children></AnchorPane>
   </content>
 </ScrollPane>

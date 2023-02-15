@@ -42,3 +42,108 @@
     -fx-text-fill: #FFFFFF;
 
 }
+#topOneMov{
+    -fx-border-color: #735F32;
+    -fx-border-style: solid;
+    -fx-border-width: 4;
+
+
+}
+#topOneMovTitle{
+    -fx-position: absolute;
+    -fx-width: 247px;
+    -fx-height: 36px;
+
+
+    -fx-font-family: 'Inter';
+   -fx-font-style: normal;
+    -fx-font-weight: 600;
+    -fx-font-size: 30px;
+    -fx-line-height: 36px;
+    -fx-display: flex;
+    -fx-align-items: center;
+    -fx-text-align: center;
+
+    -fx-text-fill: #FFFFFF;
+}
+#topTwoMovTitle{
+     -fx-position: absolute;
+     -fx-width: 247px;
+     -fx-height: 36px;
+
+
+     -fx-font-family: 'Inter';
+     -fx-font-style: normal;
+     -fx-font-weight: 600;
+     -fx-font-size: 30px;
+     -fx-line-height: 36px;
+     -fx-display: flex;
+     -fx-align-items: center;
+     -fx-text-align: center;
+
+     -fx-text-fill: #FFFFFF;
+ }
+ #topThreeMovTitle{
+     -fx-position: absolute;
+     -fx-width: 247px;
+     -fx-height: 36px;
+
+
+     -fx-font-family: 'Inter';
+     -fx-font-style: normal;
+     -fx-font-weight: 600;
+     -fx-font-size: 30px;
+     -fx-line-height: 36px;
+     -fx-display: flex;
+     -fx-align-items: center;
+     -fx-text-align: center;
+
+     -fx-text-fill: #FFFFFF;
+ }
+
+ #firstSubLable{
+     -fx-font-family: 'Inter';
+     -fx-font-style: normal;
+-fx-font-weight: bold;
+     -fx-font-size: 40px;
+     -fx-line-height: 48px;
+     -fx-display: flex;
+     -fx-align-items: center;
+     -fx-text-align: center;
+
+     -fx-text-fill: #FFFFFF;
+
+ }
+#topOneMovTitle5,#topOneMovTitle4,#topOneMovTitle3,#topOneMovTitle2,#topOneMovTitle1{
+    -fx-font-family: 'Inter';
+    -fx-font-style: normal;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-line-height: 22px;
+    -fx-display: flex;
+    -fx-align-items: center;
+    -fx-text-align: center;
+
+    -fx-text-fill: #FFFFFF;
+}
+
+#cat1,#cat2,#cat3,#cat4,#cat5,#cat6{
+    -fx-font-family: 'Inter';
+    -fx-font-style: normal;
+    -fx-font-weight: bold;
+    -fx-font-size: 30px;
+    -fx-line-height: 36px;
+    -fx-display: flex;
+    -fx-align-items: center;
+    -fx-text-align: center;
+
+    -fx-text-fill: #FFFFFF;
+}
+
+#footer{
+    -fx-text-alignment: center;
+
+    -fx-border-color: #735F32;
+    -fx-text-fill: #FFF;
+
+}

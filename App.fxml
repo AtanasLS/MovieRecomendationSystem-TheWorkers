@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="mainContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1586.0" prefWidth="1700.0" stylesheets="@../css/AppViewStylesheet.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+  <content>
+    <AnchorPane fx:id="mainPaneContainer" minHeight="0.0" minWidth="0.0" prefHeight="1902.0" prefWidth="998.0">
+         <children>
+            <MFXTextField fx:id="searchField" alignment="BASELINE_LEFT" allowEdit="false" editable="false" floatingText="Search..." layoutX="927" layoutY="78" prefHeight="50.0" prefWidth="450.0">
+               <font>
+                  <Font size="24.0" />
+               </font></MFXTextField>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="80.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../resources/avatar-icon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="firstTitle" layoutX="524" layoutY="206" stylesheets="@../css/AppViewStylesheet.css" text="Top 3 Movies" />
+            <ImageView fx:id="topOneMov" fitHeight="381.0" fitWidth="214.0" layoutX="199.0" layoutY="320.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../resources/movie_covers/download.jpeg" />
+               </image>
+               <effect>
+                  <Blend />
+               </effect></ImageView>
+             
+            <ImageView fx:id="topTwoMov" fitHeight="381.0" fitWidth="214.0" layoutX="570.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="topThreeMov" fitHeight="381.0" fitWidth="214.0" layoutX="936.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="topOneMovTitle" layoutX="199" layoutY="556.0" prefHeight="82.0" prefWidth="214.0" style="-fx-background-color: #02020280;" text="Label" />
+            <Label fx:id="topTwoMovTitle" layoutX="570.0" layoutY="536.0" prefHeight="82.0" prefWidth="305.0" style="-fx-background-color: #02020280;" text="Label" />
+            <Label fx:id="topThreeMovTitle" layoutX="936" layoutY="536" prefHeight="82.0" prefWidth="305.0" style="-fx-background-color: #02020280;" text="Label" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
