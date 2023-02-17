@@ -59,7 +59,7 @@
 
              <ImageView fx:id="topRateFirstMovie" fitHeight="270.0" fitWidth="190.0" layoutX="100.0" layoutY="885.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                  <image>
-                     <Image url="@/movie_covers/download.jpeg" />
+                     <Image url="@/movie_covers/download (3).jpeg" />
                  </image>
                  <effect>
                      <Blend />
@@ -69,7 +69,7 @@
 
             <ImageView fx:id="topRateSecondMovie" fitHeight="270.0" fitWidth="190.0" layoutX="350.0" layoutY="885.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                 <image>
-                    <Image url="@/movie_covers/download.jpeg" />
+                    <Image url="@/movie_covers/TheGodfatherPoster.jpg" />
                 </image>
                 <effect>
                     <Blend />
@@ -78,7 +78,7 @@
 
              <ImageView fx:id="topRateThirdMovie" fitHeight="270.0" fitWidth="190.0" layoutX="600.0" layoutY="885.0" pickOnBounds="true" preserveRatio="true">
                  <image>
-                     <Image url="@/movie_covers/download.jpeg" />
+                     <Image url="@/movie_covers/TheIncrediblesPoster.jpg" />
                  </image>
                  <effect>
                      <Blend />
@@ -87,7 +87,7 @@
 
              <ImageView fx:id="topRateFourthMovie" fitHeight="270.0" fitWidth="190.0" layoutX="850.0" layoutY="885.0" pickOnBounds="true" preserveRatio="true">
                  <image>
-                     <Image url="@/movie_covers/download.jpeg" />
+                     <Image url="@/movie_covers/TheSopranosPoster.jpg" />
                  </image>
                  <effect>
                      <Blend />
@@ -117,7 +117,7 @@
 
              <ImageView fx:id="catMov1" fitHeight="270.0" fitWidth="190.0" layoutX="100.0" layoutY="1450.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                  <image>
-                     <Image url="@/movie_covers/download.jpeg" />
+                     <Image url="@/movie_covers/2.jpg" />
                  </image>
                  <effect>
                      <Blend />
@@ -127,7 +127,7 @@
 
              <ImageView fx:id="catMov2" fitHeight="270.0" fitWidth="190.0" layoutX="350.0" layoutY="1450.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                  <image>
-                     <Image url="@/movie_covers/download.jpeg" />
+                     <Image url="@/movie_covers/12.jpg" />
                  </image>
                  <effect>
                      <Blend />
@@ -136,7 +136,7 @@
 
              <ImageView fx:id="catMov3" fitHeight="270.0" fitWidth="190.0" layoutX="600.0" layoutY="1450.0" pickOnBounds="true" preserveRatio="true">
                  <image>
-                     <Image url="@/movie_covers/download.jpeg" />
+                     <Image url="@/movie_covers/10.jpg" />
                  </image>
                  <effect>
                      <Blend />
@@ -145,7 +145,7 @@
 
              <ImageView fx:id="catMov4" fitHeight="270.0" fitWidth="190.0" layoutX="850.0" layoutY="1450.0" pickOnBounds="true" preserveRatio="true">
                  <image>
-                     <Image url="@/movie_covers/download.jpeg" />
+                     <Image url="@/movie_covers/25.jpg" />
                  </image>
                  <effect>
                      <Blend />
@@ -154,7 +154,7 @@
 
              <ImageView fx:id="catMov5" fitHeight="270.0" fitWidth="190.0" layoutX="1100.0" layoutY="1450.0" pickOnBounds="true" preserveRatio="true">
                  <image>
-                     <Image url="@/movie_covers/download.jpeg" />
+                     <Image url="@/movie_covers/18.jpg" />
                  </image>
                  <effect>
                      <Blend />
