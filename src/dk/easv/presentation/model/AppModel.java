@@ -25,6 +25,7 @@ public class AppModel {
     }
 
     public void loadData(User user) {
+
         obsTopMovieSeen.clear();
         obsTopMovieSeen.addAll(logic.getTopAverageRatedMovies(user));
 

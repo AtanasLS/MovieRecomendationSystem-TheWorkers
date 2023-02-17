@@ -54,11 +54,13 @@
     -fx-width: 247px;
     -fx-height: 36px;
 
+    -fx-padding: 5px;
+
 
     -fx-font-family: 'Inter';
    -fx-font-style: normal;
-    -fx-font-weight: 600;
-    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
     -fx-line-height: 36px;
     -fx-display: flex;
     -fx-align-items: center;
@@ -67,15 +69,17 @@
     -fx-text-fill: #FFFFFF;
 }
 #topTwoMovTitle{
-     -fx-position: absolute;
+    -fx-padding: 5px;
+
+    -fx-position: absolute;
      -fx-width: 247px;
      -fx-height: 36px;
 
 
      -fx-font-family: 'Inter';
      -fx-font-style: normal;
-     -fx-font-weight: 600;
-     -fx-font-size: 30px;
+     -fx-font-weight: bold;
+     -fx-font-size: 20px;
      -fx-line-height: 36px;
      -fx-display: flex;
      -fx-align-items: center;
@@ -84,6 +88,8 @@
      -fx-text-fill: #FFFFFF;
  }
  #topThreeMovTitle{
+     -fx-padding: 5px;
+
      -fx-position: absolute;
      -fx-width: 247px;
      -fx-height: 36px;
@@ -91,8 +97,8 @@
 
      -fx-font-family: 'Inter';
      -fx-font-style: normal;
-     -fx-font-weight: 600;
-     -fx-font-size: 30px;
+     -fx-font-weight: bold;
+     -fx-font-size: 20px;
      -fx-line-height: 36px;
      -fx-display: flex;
      -fx-align-items: center;
@@ -114,7 +120,9 @@
      -fx-text-fill: #FFFFFF;
 
  }
-#topOneMovTitle5,#topOneMovTitle4,#topOneMovTitle3,#topOneMovTitle2,#topOneMovTitle1{
+#topOneMovTitle5,#topOneMovTitle4,#topOneMovTitle3,#topOneMovTitle2,#topOneMovTitle1,
+#catMovTitle1,#catMovTitle2,#catMovTitle3,#catMovTitle4,#catMovTitle5{
+    -fx-padding: 5px;
     -fx-font-family: 'Inter';
     -fx-font-style: normal;
     -fx-font-weight: bold;
