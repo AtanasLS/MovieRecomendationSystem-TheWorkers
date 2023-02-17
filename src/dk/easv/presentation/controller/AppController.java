@@ -10,18 +10,17 @@ import javafx.scene.control.ListView;
 
 import java.net.URL;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class AppController implements Initializable {
+    //top three movies labels
     @FXML
-    private ListView<User> lvUsers;
-    @FXML
-    private ListView<Movie> lvTopForUser;
-    @FXML
-    private ListView<Movie> lvTopAvgNotSeen;
-    @FXML
-    private ListView<UserSimilarity> lvTopSimilarUsers;
-    @FXML
-    private ListView<TopMovie> lvTopFromSimilar;
+    private Label topOneMovTitle, topTwoMovTitle, topThreeMovTitle;
+    //top-rated movies labels
+    @FXML private Label topOneMovTitle1, topOneMovTitle2, topOneMovTitle3, topOneMovTitle4, topOneMovTitle5;
+    //categories movie titles
+    @FXML private Label catMovTitle1, catMovTitle2, catMovTitle3, catMovTitle4, catMovTitle5;
+    //footer's label
     @FXML
     private Label footer;
 
@@ -46,24 +45,29 @@ public class AppController implements Initializable {
     }
 
     public void setModel(AppModel model) {
-        this.model = model;
-        lvUsers.setItems(model.getObsUsers());
-        lvTopForUser.setItems(model.getObsTopMovieSeen());
-        lvTopAvgNotSeen.setItems(model.getObsTopMovieNotSeen());
-        lvTopSimilarUsers.setItems(model.getObsSimilarUsers());
-        lvTopFromSimilar.setItems(model.getObsTopMoviesSimilarUsers());
+        model.loadData(model.getObsLoggedInUser());
+       List<Movie>topThreeMovies= model.getObsTopMovieNotSeen();
+       topThreeMovies.sort(Comparator.comparing(Movie::getAverageRating));
 
-        startTimer("Load users");
-        model.loadUsers();
-        stopTimer();
+       topOneMovTitle.setText(topThreeMovies.get(0).getTitle().toString());
+        topTwoMovTitle.setText(topThreeMovies.get(1).getTitle());
+        topThreeMovTitle.setText(topThreeMovies.get(2).getTitle());
 
-        lvUsers.getSelectionModel().selectedItemProperty().addListener(
-                (observableValue, oldUser, selectedUser) -> {
-                    startTimer("Loading all data for user: " + selectedUser);
-                    model.loadData(selectedUser);
-                });
 
-        // Select the logged-in user in the listview, automagically trigger the listener above
-        lvUsers.getSelectionModel().select(model.getObsLoggedInUser());
+        topOneMovTitle1.setText(topThreeMovies.get((int)(Math.random()*topThreeMovies.size())+0).getTitle());
+        topOneMovTitle2.setText(topThreeMovies.get((int)(Math.random()*topThreeMovies.size())+0).getTitle());
+        topOneMovTitle3.setText(topThreeMovies.get((int)(Math.random()*topThreeMovies.size())+0).getTitle());
+        topOneMovTitle4.setText(topThreeMovies.get((int)(Math.random()*topThreeMovies.size())+0).getTitle());
+        topOneMovTitle5.setText(topThreeMovies.get((int)(Math.random()*topThreeMovies.size())+0).getTitle());
+
+        catMovTitle1.setText(topThreeMovies.get((int)(Math.random()*topThreeMovies.size())+0).getTitle());
+        catMovTitle2.setText(topThreeMovies.get((int)(Math.random()*topThreeMovies.size())+0).getTitle());
+        catMovTitle3.setText(topThreeMovies.get((int)(Math.random()*topThreeMovies.size())+0).getTitle());
+        catMovTitle4.setText(topThreeMovies.get((int)(Math.random()*topThreeMovies.size())+0).getTitle());
+        catMovTitle5.setText(topThreeMovies.get((int)(Math.random()*topThreeMovies.size())+0).getTitle());
+
+
+
+
     }
 }
