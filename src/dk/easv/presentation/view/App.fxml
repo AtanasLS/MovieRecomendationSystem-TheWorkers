@@ -7,6 +7,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
@@ -106,12 +107,12 @@
              <Line fx:id="secondSeparateLine" endX="1700.0" layoutY="1250.0" stroke="#735f32" strokeWidth="5.0" />
 
 
-             <Label fx:id="cat1" layoutX="100.0" layoutY="1350.0" prefHeight="50.0" prefWidth="150.0" text="Action" onMouseClicked="#setAction"/>
-             <Label fx:id="cat2" layoutX="310.0" layoutY="1350.0" prefHeight="50.0" prefWidth="150.0" text="Drama" onMouseClicked="#setDrama" />
-             <Label fx:id="cat3" layoutX="520.0" layoutY="1350.0" prefHeight="50.0" prefWidth="150.0" text="Comedy" onMouseClicked="#setComedy"/>
-             <Label fx:id="cat4" layoutX="730.0" layoutY="1350.0" prefHeight="50.0" prefWidth="150.0" text="Horror" onMouseClicked="#setHorror"/>
-             <Label fx:id="cat5" layoutX="940.0" layoutY="1350.0" prefHeight="50.0" prefWidth="150.0" text="Animation" onMouseClicked="#setAnimation"/>
-             <Label fx:id="cat6" layoutX="1150.0" layoutY="1350.0" prefHeight="50.0" prefWidth="150.0" text="Romance" onMouseClicked="#setRomance"/>
+             <Label fx:id="cat1" layoutX="100.0" layoutY="1350.0" onMouseClicked="#setAction" prefHeight="50.0" prefWidth="150.0" text="Action" />
+             <Label fx:id="cat2" layoutX="310.0" layoutY="1350.0" onMouseClicked="#setDrama" prefHeight="50.0" prefWidth="150.0" text="Drama" />
+             <Label fx:id="cat3" layoutX="520.0" layoutY="1350.0" onMouseClicked="#setComedy" prefHeight="50.0" prefWidth="150.0" text="Comedy" />
+             <Label fx:id="cat4" layoutX="730.0" layoutY="1350.0" onMouseClicked="#setHorror" prefHeight="50.0" prefWidth="150.0" text="Horror" />
+             <Label fx:id="cat5" layoutX="940.0" layoutY="1350.0" onMouseClicked="#setAnimation" prefHeight="50.0" prefWidth="150.0" text="Animation" />
+             <Label fx:id="cat6" layoutX="1150.0" layoutY="1350.0" onMouseClicked="#setRomance" prefHeight="50.0" prefWidth="150.0" text="Romance" />
 
 
 
@@ -160,10 +161,18 @@
                      <Blend />
                  </effect></ImageView>
              <Label fx:id="catMovTitle5" layoutX="1100.0" layoutY="1640.0" prefHeight="82.0" prefWidth="182.0" style="-fx-background-color: #02020280;" text="Label" />
-
-
-
-            <Label fx:id="footer" layoutX="0.0" layoutY="1800.0" prefHeight="100.0" prefWidth="1440.0" style="-fx-background-color: #735F32;" text="Private movie collection &#10;Made by Group Name&#10;         EASV 2023" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" />
+            <HBox fx:id="footerBox" alignment="TOP_CENTER" layoutX="0" layoutY="1744" prefHeight="100.0" prefWidth="1440.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="1400.0" style="-fx-background-color: #735F32;" />
+      
+      
+      
+                  <Label fx:id="footer" prefHeight="100.0" prefWidth="1440.0" style="-fx-background-color: #735F32;" text="Private movie collection &#10;Made by The Workers&#10;EASV 2023&#10;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+               </children>
+            </HBox>
 
 
 
