@@ -19,7 +19,7 @@
                <font>
                   <Font size="24.0" />
                </font></MFXTextField>
-            <ImageView fx:id="userIcon" fitHeight="150.0" fitWidth="200.0" layoutX="80.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="userIcon" fitHeight="109.0" fitWidth="129.0" layoutX="80.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@/movie_covers/2940656.png" />
                </image>
@@ -173,7 +173,7 @@
                      </font></Label>
                </children>
             </HBox>
-            <Label alignment="CENTER" layoutX="90.0" layoutY="203.0" prefHeight="30.0" prefWidth="131.0" text="Anneke Preusig" textFill="#fcf9f9">
+            <Label alignment="CENTER" layoutX="79.0" layoutY="161.0" prefHeight="30.0" prefWidth="131.0" text="Anneke Preusig" textFill="#fcf9f9">
                <font>
                   <Font size="18.0" />
                </font></Label>
