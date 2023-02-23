@@ -26,6 +26,8 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class AppController implements Initializable {
+    @FXML
+    public Label usernameLabel;
     //top three movies labels
     @FXML
     private Label topOneMovTitle, topTwoMovTitle, topThreeMovTitle;
@@ -75,6 +77,7 @@ public class AppController implements Initializable {
 
     public void setModel(AppModel model) {
         model.loadData(model.getObsLoggedInUser());
+        usernameLabel.setText(model.getObsLoggedInUser().getName());
 
        topThreeMovies= model.getObsTopMovieNotSeen();
        topThreeMovies.sort(Comparator.comparing(Movie::getAverageRating));
@@ -112,8 +115,11 @@ public class AppController implements Initializable {
     private void setRandomImages(){
         try {
             Stream<Path> stream = Files.list(Paths.get(getClass().getResource("/movie_covers/").toURI()));
-            List<String> imgs = stream.filter(file -> !Files.isDirectory(file)).map(Path::getFileName).map(Path::toString).collect(Collectors.toList());
-            List<Image> imgsConv = imgs.stream().map(name -> new Image("/movie_covers/"+name)).collect(Collectors.toList());
+            List<String> imgs = stream.filter(file -> !Files.isDirectory(file))
+                    .map(Path::getFileName)
+                    .map(Path::toString).collect(Collectors.toList());
+            List<Image> imgsConv = imgs.stream()
+                    .map(name -> new Image("/movie_covers/"+name)).collect(Collectors.toList());
             randomImages.addAll(imgsConv);
         } catch (IOException e) {
             throw new RuntimeException(e);

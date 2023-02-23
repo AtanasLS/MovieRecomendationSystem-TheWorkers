@@ -43,7 +43,7 @@
             </GridPane>
             <ImageView fx:id="avatarView" fitHeight="97.0" fitWidth="93.0" layoutX="225.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@/avatar-icon.png" />
+                  <Image url="@/icons/avatar-icon.png" />
                </image>
             </ImageView>
          </children>
