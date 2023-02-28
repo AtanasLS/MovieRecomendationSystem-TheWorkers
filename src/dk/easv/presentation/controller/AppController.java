@@ -10,6 +10,7 @@ import javafx.scene.control.ListView;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Background;
 import javafx.scene.paint.Color;
 
 
@@ -189,10 +190,23 @@ public class AppController implements Initializable {
         for (int j = 0; j < 6; j++) {
 
             if (j==i){
-                this.categories.get(j).setTextFill(Color.web("#C69749"));
+                this.categories.get(j).setStyle("-fx-background-radius: 30px;" +
+                        "    -fx-text-fill: #C69749;\n" +
+                        "     -fx-background-fill: #282A3A;\n");
+
+
+
+
+
 
             }else {
                 this.categories.get(j).setTextFill(Color.web("#fff"));
+                this.categories.get(j).setBackground(Background.fill(Color.web("#735F32")));
+                this.categories.get(j).setStyle("-fx-background-radius: 30;");
+                this.categories.get(j).setStyle("-fx-border-radius: 30;");
+
+
+
             }
         }
     }
