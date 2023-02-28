@@ -107,12 +107,12 @@
              <Line fx:id="secondSeparateLine" endX="1700.0" layoutY="1250.0" stroke="#735f32" strokeWidth="5.0" />
 
 
-             <Label fx:id="cat1" layoutX="100.0" layoutY="1350.0" onMouseClicked="#setAction" prefHeight="50.0" prefWidth="150.0" text="Action" />
-             <Label fx:id="cat2" layoutX="310.0" layoutY="1350.0" onMouseClicked="#setDrama" prefHeight="50.0" prefWidth="150.0" text="Drama" />
-             <Label fx:id="cat3" layoutX="520.0" layoutY="1350.0" onMouseClicked="#setComedy" prefHeight="50.0" prefWidth="150.0" text="Comedy" />
-             <Label fx:id="cat4" layoutX="730.0" layoutY="1350.0" onMouseClicked="#setHorror" prefHeight="50.0" prefWidth="150.0" text="Horror" />
-             <Label fx:id="cat5" layoutX="940.0" layoutY="1350.0" onMouseClicked="#setAnimation" prefHeight="50.0" prefWidth="150.0" text="Animation" />
-             <Label fx:id="cat6" layoutX="1150.0" layoutY="1350.0" onMouseClicked="#setRomance" prefHeight="50.0" prefWidth="150.0" text="Romance" />
+             <Label fx:id="cat1" alignment="CENTER" layoutX="100.0" layoutY="1350.0" onMouseClicked="#setAction" prefHeight="50.0" prefWidth="150.0" text="Action" />
+             <Label fx:id="cat2" alignment="CENTER" layoutX="310.0" layoutY="1350.0" onMouseClicked="#setDrama" prefHeight="50.0" prefWidth="150.0" text="Drama" />
+             <Label fx:id="cat3" alignment="CENTER" layoutX="520.0" layoutY="1350.0" onMouseClicked="#setComedy" prefHeight="50.0" prefWidth="150.0" text="Comedy" />
+             <Label fx:id="cat4" alignment="CENTER" layoutX="730.0" layoutY="1350.0" onMouseClicked="#setHorror" prefHeight="50.0" prefWidth="150.0" text="Horror" />
+             <Label fx:id="cat5" alignment="CENTER" layoutX="940.0" layoutY="1350.0" onMouseClicked="#setAnimation" prefHeight="50.0" prefWidth="175.0" text="Animation" />
+             <Label fx:id="cat6" alignment="CENTER" layoutX="1150.0" layoutY="1350.0" onMouseClicked="#setRomance" prefHeight="50.0" prefWidth="155.0" text="Romance" />
 
 
 
