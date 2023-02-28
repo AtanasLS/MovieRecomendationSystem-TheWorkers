@@ -145,6 +145,15 @@
     -fx-text-align: center;
 
     -fx-text-fill: #FFFFFF;
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+     -fx-border-color: #735F32;
+     -fx-padding: 10px;
+     -fx-border-radius: 30px;
+    -fx-background-color: #735F32;
+       -fx-background-radius: 30px;
+
+
+
 }
 
 #footer{
