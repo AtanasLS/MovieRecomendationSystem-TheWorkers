@@ -193,12 +193,6 @@ public class AppController implements Initializable {
                 this.categories.get(j).setStyle("-fx-background-radius: 30px;" +
                         "    -fx-text-fill: #C69749;\n" +
                         "     -fx-background-fill: #282A3A;\n");
-
-
-
-
-
-
             }else {
                 this.categories.get(j).setTextFill(Color.web("#fff"));
                 this.categories.get(j).setBackground(Background.fill(Color.web("#735F32")));
